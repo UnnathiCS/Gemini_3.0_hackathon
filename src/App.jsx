@@ -17,12 +17,12 @@ import {
 
 // 1. FOR GITHUB / VERCEL DEPLOYMENT:
 // Uncomment the line below when you move this to your local project or GitHub.
-// const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || ""; 
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || ""; 
 
 // 2. FOR THIS PREVIEW:
 // We keep this empty to avoid compilation errors in the browser. 
 // The environment variable syntax (import.meta) causes issues here.
-const API_KEY = ""; 
+// const API_KEY = ""; 
 
 export default function App() {
   // State
