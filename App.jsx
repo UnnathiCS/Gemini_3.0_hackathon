@@ -13,8 +13,12 @@ import {
   RefreshCw
 } from 'lucide-react';
 
-// IMPORTANT: Replace with your actual Gemini API Key or use a secure backend proxy
-const API_KEY = ""; 
+// NOTE FOR DEPLOYMENT:
+// When you deploy to Vercel/Netlify with Git, uncomment the line below and set VITE_GEMINI_API_KEY in your project settings.
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
+
+// For this preview to work, we keep this empty (the system provides the key automatically).
+// const API_KEY = ""; 
 
 export default function App() {
   // State
